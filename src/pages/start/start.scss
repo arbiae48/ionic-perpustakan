@@ -1,0 +1,38 @@
+page-start {
+    .start{
+        position: relative;
+        background-color: #2d3236;
+        height: 100vh;
+
+        .cover {
+            position: absolute;
+            top: 25%;
+            text-align: center;
+
+            img {
+                width: 50%;
+            }
+
+            h2 {
+                color: #dd8546;
+                font-size: 25px;
+            }
+
+            p {
+                color: #fcd77f;
+                font-size: 16px;
+            }
+        }
+
+        button {
+            position: absolute;
+            background: #45d6b7;
+            bottom: 10%;
+            width: 50%;
+            left: 25%;
+            padding: 15px 10px;
+            font-size: 30px;
+            height: auto !important;
+        }
+    }
+}

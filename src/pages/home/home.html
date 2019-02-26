@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-searchbar></ion-searchbar>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+      <ion-slides [autoplay]=1000>
+          <ion-slide>
+            <img src="../../assets/imgs/slide1.jpg">
+          </ion-slide>
+          <ion-slide>
+            <img src="../../assets/imgs/slide2.jpg">
+          </ion-slide>
+          <ion-slide>
+            <img src="../../assets/imgs/slide3.jpg">
+          </ion-slide>                  
+      </ion-slides>
+  </ion-card>
+  <ion-card>
+      <ion-card-header>
+          <ion-icon name="bookmarks"></ion-icon> Buku Terbaru
+      </ion-card-header>
+      <ion-card-content>
+          <ion-slides [slidesPerView]=3 class="list-buku">
+            <ion-slide>
+              <img src="../../assets/imgs/buku1.jpg">
+            </ion-slide>
+            <ion-slide>
+              <img src="../../assets/imgs/bk1.jpg">
+            </ion-slide>
+            <ion-slide>
+             <img src="../../assets/imgs/buku3.jpg">
+            </ion-slide> 
+            <ion-slide>
+              <img src="../../assets/imgs/buku1.jpg">
+            </ion-slide>
+            <ion-slide>
+              <img src="../../assets/imgs/bk1.jpg">
+            </ion-slide>
+            <ion-slide>
+              <img src="../../assets/imgs/buku3.jpg">
+            </ion-slide>                                 
+          </ion-slides>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="news">
+        <ion-card-content>
+          <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+        </ion-card-content>
+        <ion-row>
+          <ion-col>
+            <button ion-button icon-start clear small>
+              <ion-icon name="thumbs-up"></ion-icon>
+              <div>10 Likes</div>
+            </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button icon-start clear small>
+              <ion-icon name="text"></ion-icon>
+              <div>11 Comments</div>
+            </button>
+          </ion-col>
+          <ion-col align-self-center text-center>
+            <ion-note>
+              11h ago
+            </ion-note>
+          </ion-col>
+        </ion-row>
+      
+      </ion-card>        
+</ion-content>

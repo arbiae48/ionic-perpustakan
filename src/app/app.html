@@ -1,0 +1,27 @@
+<ion-menu [content]="content">
+  <ion-content>
+    <ion-card class="hero">
+      <img src="../assets/imgs/a.jpg"/>
+      <ion-grid class="user">
+          <ion-row>
+            <ion-col class="avatar" col-4>
+              <img src="../assets/imgs/ava.png">
+            </ion-col>
+            <ion-col class="desc" col-8>
+              <h2>Ardian arbi</h2>
+              <p>ardianarbi@gmail.com</p>
+            </ion-col>
+          </ion-row>
+      </ion-grid>
+    </ion-card>    
+    <ion-list>
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <ion-icon name="{{p.icon}}"></ion-icon> {{p.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
